@@ -30,12 +30,12 @@
     CGSize progressSize = CGSizeMake(_progressCount * CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds));
     progressRect.size = progressSize;
     progressRect = CGRectInset(progressRect, 1, 1);
-    UIColor* progressColor = [UIColor colorWithRed: 181.0f/255.0f green: 213.0f/255.0f blue: 255.0f alpha: 1];
     
     // create the background image
     UIGraphicsBeginImageContext(self.bounds.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
-    
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+
     // clear the whole rounded-rect background first
     CGFloat minx = CGRectGetMinX(rect);
     CGFloat midx = CGRectGetMidX(rect);
@@ -71,16 +71,24 @@
         
     // draw the rounded-rect progress bar
 	CGContextClip(context);
-	// background gradient, the Safari style
-	CGFloat components[12] = 
-    { 
-        191.0f/255.0f, 231.0f/255.0f, 255.0f/255.0f, 1.0f, 
-        112.0f/255.0f, 202.0f/255.0f, 238.0f/255.0f, 1.0f,
-        191.0f/255.0f, 231.0f/255.0f, 255.0f/255.0f, 1.0f, 
-	};
-	CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();    
-	CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, components, NULL, 3);
-	CGContextDrawLinearGradient(context, gradient, CGPointZero, CGPointMake(0, progressRect.size.height), kCGGradientDrawsBeforeStartLocation);
+    CGFloat locations[4] = { 0.0, 0.5, 0.5, 1.0 };
+    CGFloat components [16] = 
+    {
+        0.75, 0.85, 0.95, 1.0,      // Start color
+        0.45, 0.67, 0.91, 1.0,      // Mid color
+        0.37, 0.63, 0.89, 1.0,      // Mid color        
+        0.24, 0.54, 0.85, 1.0       // End color
+    };
+    CGGradientRef gradient = CGGradientCreateWithColorComponents (colorSpace, components, locations, 4);
+    
+    // setup gradient points
+    CGPoint startPoint, endPoint;
+    startPoint.x = self.frame.size.width / 2;
+    startPoint.y = 0;
+    endPoint.x = self.frame.size.width / 2;
+    endPoint.y = self.frame.size.height;    
+
+	CGContextDrawLinearGradient(context, gradient, startPoint, endPoint, kCGGradientDrawsBeforeStartLocation);
 	CFRelease(gradient);
     
     UIImage * image = UIGraphicsGetImageFromCurrentImageContext();
@@ -107,13 +115,13 @@
 //--------------------------------------------------------------------------------
 - (CGRect)textRectForBounds:(CGRect)bounds
 {
-    CGRect inset = CGRectMake(bounds.origin.x + 10, bounds.origin.y, bounds.size.width - 20, bounds.size.height);
+    CGRect inset = CGRectMake(bounds.origin.x + 10, bounds.origin.y + 3, bounds.size.width - 20, bounds.size.height);
     return inset;
 }
 
 - (CGRect)editingRectForBounds:(CGRect)bounds 
 {
-    CGRect inset = CGRectMake(bounds.origin.x + 10, bounds.origin.y, bounds.size.width - 20, bounds.size.height);
+    CGRect inset = CGRectMake(bounds.origin.x + 10, bounds.origin.y + 3, bounds.size.width - 20, bounds.size.height);
     return inset;
 }
 

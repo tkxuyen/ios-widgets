@@ -48,7 +48,7 @@
 
     // create the segmented control
 	_segment = [[XSegmentedControl alloc] initWithParent: self];
-    _segment.frame = CGRectMake(5, 447, 310, 28);
+    _segment.frame = CGRectMake(5, 450, 310, 26);
 	_segment.segmentedControlStyle = UISegmentedControlStylePlain;
 	_segment.selectedSegmentIndex = 0;
 	_segment.tintColor = [UIColor colorWithRed: 0.2 green: 0.5 blue: 0.8 alpha: 1];
@@ -63,17 +63,17 @@
     _filepathHeader = [[XFilePathHeader alloc] initWithFrame: CGRectMake(0, 0, 320, 28) notifyObject:self ];
     [[self view] addSubview: _filepathHeader];
 
-    _progressTextField = [[XProgressTextField alloc] initWithFrame: CGRectMake(2, 2, 316, 24)];
+    _progressTextField = [[XProgressTextField alloc] initWithFrame: CGRectMake(5, 5, 310, 24)];
     _progressTextField.hidden = TRUE;
     _progressTextField.borderStyle = UITextBorderStyleNone;
     _progressTextField.textColor = [UIColor blackColor];
     _progressTextField.backgroundColor = [UIColor clearColor];
-    _progressTextField.layer.cornerRadius = 12.0f;
+    _progressTextField.layer.cornerRadius = 10.0f;
     _progressTextField.placeholder = @"http://blog.tkxuyen.com";
     _progressTextField.delegate = self;
     _progressTextField.autocorrectionType = UITextAutocorrectionTypeNo;
     _progressTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
-    _progressTextField.font = [UIFont systemFontOfSize:16.0];
+    _progressTextField.font = [UIFont systemFontOfSize:14.0];
     [_progressTextField setProgress: 0.0f];
     [[self view] addSubview: _progressTextField];
 
@@ -82,7 +82,7 @@
 	_fileTableView.delegate = self; 
 	[[self view] addSubview: _fileTableView];
 
-    _webView = [[UIWebView alloc] initWithFrame: CGRectMake(0, 30, 320, 412) ]; 
+    _webView = [[UIWebView alloc] initWithFrame: CGRectMake(0, 34, 320, 412) ]; 
     _webView.hidden = TRUE;
     [[self view] addSubview: _webView];
     
@@ -265,19 +265,19 @@
     if (toInterfaceOrientation == UIInterfaceOrientationLandscapeLeft ||
         toInterfaceOrientation == UIInterfaceOrientationLandscapeRight)
     {
-        _progressTextField.frame = CGRectMake(2, 2, 476, 24);
-        _webView.frame = CGRectMake(0, 30, 480, 252);
+        _progressTextField.frame = CGRectMake(5, 5, 470, 24);
+        _webView.frame = CGRectMake(0, 34, 480, 252);
         _filepathHeader.frame = CGRectMake(0, 0, 480, 28);
         _fileTableView.frame = CGRectMake(0, 28, 480, 252);
-        _segment.frame = CGRectMake(5, 287, 470, 28);
+        _segment.frame = CGRectMake(5, 287, 470, 26);
         [_filepathHeader setCurrentDirectory: _currentDirectory];
         [_filepathHeader setNeedsDisplay];
         [_segment setNeedsDisplay];
     }
     else
     {
-        _progressTextField.frame = CGRectMake(2, 2, 316, 24);
-        _webView.frame = CGRectMake(0, 30, 320, 412);        
+        _progressTextField.frame = CGRectMake(5, 5, 310, 24);
+        _webView.frame = CGRectMake(0, 34, 320, 412);        
         _filepathHeader.frame = CGRectMake(0, 0, 320, 28);
         _fileTableView.frame = CGRectMake(0, 28, 320, 412);
         _segment.frame = CGRectMake(5, 447, 310, 28);        
