@@ -12,9 +12,20 @@
 		CE1E9E2814F0C1CC00AEF007 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1E9E2714F0C1CC00AEF007 /* CoreGraphics.framework */; };
 		CE1E9E2E14F0C1CC00AEF007 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E2C14F0C1CC00AEF007 /* InfoPlist.strings */; };
 		CE1E9E3014F0C1CC00AEF007 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9E2F14F0C1CC00AEF007 /* main.m */; };
-		CE1E9E3414F0C1CC00AEF007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9E3314F0C1CC00AEF007 /* AppDelegate.m */; };
-		CE1E9E3714F0C1CC00AEF007 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9E3614F0C1CC00AEF007 /* ViewController.m */; };
-		CE1E9E3A14F0C1CC00AEF007 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E3814F0C1CC00AEF007 /* ViewController.xib */; };
+		CE1E9E5114F0C20F00AEF007 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9E4114F0C20F00AEF007 /* AppDelegate.m */; };
+		CE1E9E5314F0C20F00AEF007 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9E4414F0C20F00AEF007 /* CustomTableCell.m */; };
+		CE1E9E5514F0C20F00AEF007 /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E4614F0C20F00AEF007 /* file.png */; };
+		CE1E9E5614F0C20F00AEF007 /* files.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E4714F0C20F00AEF007 /* files.png */; };
+		CE1E9E5714F0C20F00AEF007 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E4814F0C20F00AEF007 /* folder.png */; };
+		CE1E9E5814F0C20F00AEF007 /* logs.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E4914F0C20F00AEF007 /* logs.png */; };
+		CE1E9E5914F0C20F00AEF007 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9E4B14F0C20F00AEF007 /* ViewController.m */; };
+		CE1E9E5A14F0C20F00AEF007 /* XFilePathHeader_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E4C14F0C20F00AEF007 /* XFilePathHeader_icon.png */; };
+		CE1E9E5B14F0C20F00AEF007 /* XFilePathHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9E4E14F0C20F00AEF007 /* XFilePathHeader.m */; };
+		CE1E9E5C14F0C20F00AEF007 /* XSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9E5014F0C20F00AEF007 /* XSegmentedControl.m */; };
+		CE1E9E6614F0C2DF00AEF007 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E6214F0C2DF00AEF007 /* InfoPlist.strings */; };
+		CE1E9E6714F0C2DF00AEF007 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9E6414F0C2DF00AEF007 /* ViewController.xib */; };
+		CE1E9F0314F0C31600AEF007 /* test_data in Resources */ = {isa = PBXBuildFile; fileRef = CE1E9F0214F0C31600AEF007 /* test_data */; };
+		CE1E9F0614F0C62B00AEF007 /* XProgressTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E9F0514F0C62B00AEF007 /* XProgressTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +33,34 @@
 		CE1E9E2314F0C1CC00AEF007 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE1E9E2514F0C1CC00AEF007 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE1E9E2714F0C1CC00AEF007 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CE1E9E2B14F0C1CC00AEF007 /* ios-controls-Info.plist */ = {isa = PBXFileReference; path = "ios-controls-Info.plist"; sourceTree = "<group>"; };
+		CE1E9E2B14F0C1CC00AEF007 /* ios-controls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ios-controls-Info.plist"; sourceTree = "<group>"; };
 		CE1E9E2D14F0C1CC00AEF007 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE1E9E2F14F0C1CC00AEF007 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE1E9E3114F0C1CC00AEF007 /* ios-controls-Prefix.pch */ = {isa = PBXFileReference; path = "ios-controls-Prefix.pch"; sourceTree = "<group>"; };
-		CE1E9E3214F0C1CC00AEF007 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE1E9E3314F0C1CC00AEF007 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CE1E9E3514F0C1CC00AEF007 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		CE1E9E3614F0C1CC00AEF007 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CE1E9E3914F0C1CC00AEF007 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		CE1E9E3114F0C1CC00AEF007 /* ios-controls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-controls-Prefix.pch"; sourceTree = "<group>"; };
+		CE1E9E4014F0C20F00AEF007 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE1E9E4114F0C20F00AEF007 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE1E9E4314F0C20F00AEF007 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
+		CE1E9E4414F0C20F00AEF007 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		CE1E9E4614F0C20F00AEF007 /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
+		CE1E9E4714F0C20F00AEF007 /* files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = files.png; sourceTree = "<group>"; };
+		CE1E9E4814F0C20F00AEF007 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		CE1E9E4914F0C20F00AEF007 /* logs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logs.png; sourceTree = "<group>"; };
+		CE1E9E4A14F0C20F00AEF007 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE1E9E4B14F0C20F00AEF007 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE1E9E4C14F0C20F00AEF007 /* XFilePathHeader_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XFilePathHeader_icon.png; sourceTree = "<group>"; };
+		CE1E9E4D14F0C20F00AEF007 /* XFilePathHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XFilePathHeader.h; sourceTree = "<group>"; };
+		CE1E9E4E14F0C20F00AEF007 /* XFilePathHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XFilePathHeader.m; sourceTree = "<group>"; };
+		CE1E9E4F14F0C20F00AEF007 /* XSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSegmentedControl.h; sourceTree = "<group>"; };
+		CE1E9E5014F0C20F00AEF007 /* XSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSegmentedControl.m; sourceTree = "<group>"; };
+		CE1E9E6314F0C2DF00AEF007 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		CE1E9E6514F0C2DF00AEF007 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = ViewController.xib; sourceTree = "<group>"; };
+		CE1E9F0214F0C31600AEF007 /* test_data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test_data; sourceTree = "<group>"; };
+		CE1E9F0414F0C62B00AEF007 /* XProgressTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XProgressTextField.h; sourceTree = "<group>"; };
+		CE1E9F0514F0C62B00AEF007 /* XProgressTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XProgressTextField.m; sourceTree = "<group>"; };
+		CE1E9FA614F0CC2400AEF007 /* UIWebDocumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIWebDocumentView.h; sourceTree = "<group>"; };
+		CE1E9FA714F0CC2400AEF007 /* WAKResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAKResponder.h; sourceTree = "<group>"; };
+		CE1E9FA814F0CC2400AEF007 /* WAKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAKView.h; sourceTree = "<group>"; };
+		CE1E9FA914F0CC2400AEF007 /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +80,7 @@
 		CE1E9E1414F0C1CC00AEF007 = {
 			isa = PBXGroup;
 			children = (
+				CE1E9F0214F0C31600AEF007 /* test_data */,
 				CE1E9E2914F0C1CC00AEF007 /* ios-controls */,
 				CE1E9E2214F0C1CC00AEF007 /* Frameworks */,
 				CE1E9E2014F0C1CC00AEF007 /* Products */,
@@ -77,12 +108,29 @@
 		CE1E9E2914F0C1CC00AEF007 /* ios-controls */ = {
 			isa = PBXGroup;
 			children = (
-				CE1E9E3214F0C1CC00AEF007 /* AppDelegate.h */,
-				CE1E9E3314F0C1CC00AEF007 /* AppDelegate.m */,
-				CE1E9E3514F0C1CC00AEF007 /* ViewController.h */,
-				CE1E9E3614F0C1CC00AEF007 /* ViewController.m */,
-				CE1E9E3814F0C1CC00AEF007 /* ViewController.xib */,
+				CE1E9FA614F0CC2400AEF007 /* UIWebDocumentView.h */,
+				CE1E9FA714F0CC2400AEF007 /* WAKResponder.h */,
+				CE1E9FA814F0CC2400AEF007 /* WAKView.h */,
+				CE1E9FA914F0CC2400AEF007 /* WebView.h */,
+				CE1E9E6114F0C2DF00AEF007 /* en.lproj */,
+				CE1E9E4014F0C20F00AEF007 /* AppDelegate.h */,
+				CE1E9E4114F0C20F00AEF007 /* AppDelegate.m */,
+				CE1E9E4314F0C20F00AEF007 /* CustomTableCell.h */,
+				CE1E9E4414F0C20F00AEF007 /* CustomTableCell.m */,
+				CE1E9E4614F0C20F00AEF007 /* file.png */,
+				CE1E9E4714F0C20F00AEF007 /* files.png */,
+				CE1E9E4814F0C20F00AEF007 /* folder.png */,
+				CE1E9E4914F0C20F00AEF007 /* logs.png */,
+				CE1E9E4A14F0C20F00AEF007 /* ViewController.h */,
+				CE1E9E4B14F0C20F00AEF007 /* ViewController.m */,
+				CE1E9E4C14F0C20F00AEF007 /* XFilePathHeader_icon.png */,
+				CE1E9E4D14F0C20F00AEF007 /* XFilePathHeader.h */,
+				CE1E9E4E14F0C20F00AEF007 /* XFilePathHeader.m */,
+				CE1E9E4F14F0C20F00AEF007 /* XSegmentedControl.h */,
+				CE1E9E5014F0C20F00AEF007 /* XSegmentedControl.m */,
 				CE1E9E2A14F0C1CC00AEF007 /* Supporting Files */,
+				CE1E9F0414F0C62B00AEF007 /* XProgressTextField.h */,
+				CE1E9F0514F0C62B00AEF007 /* XProgressTextField.m */,
 			);
 			path = "ios-controls";
 			sourceTree = "<group>";
@@ -96,6 +144,15 @@
 				CE1E9E3114F0C1CC00AEF007 /* ios-controls-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE1E9E6114F0C2DF00AEF007 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CE1E9E6214F0C2DF00AEF007 /* InfoPlist.strings */,
+				CE1E9E6414F0C2DF00AEF007 /* ViewController.xib */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +206,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1E9E2E14F0C1CC00AEF007 /* InfoPlist.strings in Resources */,
-				CE1E9E3A14F0C1CC00AEF007 /* ViewController.xib in Resources */,
+				CE1E9E5514F0C20F00AEF007 /* file.png in Resources */,
+				CE1E9E5614F0C20F00AEF007 /* files.png in Resources */,
+				CE1E9E5714F0C20F00AEF007 /* folder.png in Resources */,
+				CE1E9E5814F0C20F00AEF007 /* logs.png in Resources */,
+				CE1E9E5A14F0C20F00AEF007 /* XFilePathHeader_icon.png in Resources */,
+				CE1E9E6614F0C2DF00AEF007 /* InfoPlist.strings in Resources */,
+				CE1E9E6714F0C2DF00AEF007 /* ViewController.xib in Resources */,
+				CE1E9F0314F0C31600AEF007 /* test_data in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +225,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1E9E3014F0C1CC00AEF007 /* main.m in Sources */,
-				CE1E9E3414F0C1CC00AEF007 /* AppDelegate.m in Sources */,
-				CE1E9E3714F0C1CC00AEF007 /* ViewController.m in Sources */,
+				CE1E9E5114F0C20F00AEF007 /* AppDelegate.m in Sources */,
+				CE1E9E5314F0C20F00AEF007 /* CustomTableCell.m in Sources */,
+				CE1E9E5914F0C20F00AEF007 /* ViewController.m in Sources */,
+				CE1E9E5B14F0C20F00AEF007 /* XFilePathHeader.m in Sources */,
+				CE1E9E5C14F0C20F00AEF007 /* XSegmentedControl.m in Sources */,
+				CE1E9F0614F0C62B00AEF007 /* XProgressTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,10 +245,18 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		CE1E9E3814F0C1CC00AEF007 /* ViewController.xib */ = {
+		CE1E9E6214F0C2DF00AEF007 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE1E9E3914F0C1CC00AEF007 /* en */,
+				CE1E9E6314F0C2DF00AEF007 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE1E9E6414F0C2DF00AEF007 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE1E9E6514F0C2DF00AEF007 /* en */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
